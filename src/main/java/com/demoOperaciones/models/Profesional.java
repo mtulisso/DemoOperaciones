@@ -7,6 +7,7 @@ import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -62,7 +63,7 @@ public class Profesional implements Serializable {
 	@OneToMany(mappedBy="profesional")
     private Set<Historico> historicos;
 	
-	@OneToOne
+	@OneToOne(cascade = CascadeType.ALL)
 	@JoinColumn(name="id_contacto", referencedColumnName="id")
 	private Contacto contacto;
 	

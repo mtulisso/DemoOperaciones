@@ -21,6 +21,8 @@ import com.demoOperaciones.request.TituloRequestDTO;
 import com.demoOperaciones.response.TituloResponseDTO;
 import com.demoOperaciones.service.TituloService;
 
+import io.swagger.v3.oas.annotations.Parameter;
+
 /**
  * @author MarcosTulisso
  *
@@ -41,7 +43,9 @@ public class TituloControllerImpl implements TituloController {
 	public List<Titulo> findAll() {
 		return tituloService.findAll();
 	}
-
+	
+	//nose no hace nada 
+	@Parameter(name = "Nombre", description = "Agregar un título", required = true)
 	@Override
 	@PostMapping
 	public ResponseEntity<TituloResponseDTO> generate(@Valid TituloRequestDTO entity) {

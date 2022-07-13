@@ -30,12 +30,13 @@ import com.demoOperaciones.service.ProfesionalService;
 public class ProfesionalControllerImpl implements ProfesionalController {
 	@Autowired
 	private ProfesionalService profesionalService;
-		
+	
 	@Override
+	@GetMapping("{Id}")
 	public ResponseEntity<Profesional> find(Long Id) throws Exception {
-		return new ResponseEntity<Profesional>(this.profesionalService.findById(Id), HttpStatus.OK);
+		return new ResponseEntity<Profesional>(this.profesionalService.findById(Id), HttpStatus.OK);	
 	}
-
+		
 	@Override
 	@GetMapping()
 	public List<Profesional> findAll() {
@@ -44,7 +45,7 @@ public class ProfesionalControllerImpl implements ProfesionalController {
 
 	@Override
 	@PostMapping
-	public ResponseEntity<ProfesionalResponseDTO> generate(@Valid ProfesionalRequestDTO entity) {
+	public ResponseEntity<ProfesionalResponseDTO> generate(@Valid ProfesionalRequestDTO entity) throws Exception {
 		return new ResponseEntity<ProfesionalResponseDTO>(this.profesionalService.generate(entity), HttpStatus.CREATED);
 	}
 

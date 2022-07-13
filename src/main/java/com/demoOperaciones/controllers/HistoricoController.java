@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 
 import com.demoOperaciones.models.Historico;
 
+import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.tags.Tag;
 
 /**
@@ -20,6 +21,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 public interface HistoricoController {
 	public ResponseEntity<Historico> find(@PathVariable Long Id) throws Exception;
 	
+	@Operation(summary = "obtenerTodos")
 	public List<Historico> findAll();
 }
 

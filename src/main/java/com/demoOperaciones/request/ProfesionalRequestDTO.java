@@ -3,11 +3,8 @@
  */
 package com.demoOperaciones.request;
 
-import java.time.LocalDate;
-
 import javax.validation.constraints.NotBlank;
-
-import com.fasterxml.jackson.annotation.JsonFormat;
+import javax.validation.constraints.NotNull;
 
 import lombok.Data;
 
@@ -19,12 +16,29 @@ import lombok.Data;
 public class ProfesionalRequestDTO {
 	@NotBlank(message = "El nombre no puede estar en blanco")
 	private String nombre;
-	@NotBlank(message = "El nombre no puede estar en blanco")
+	@NotBlank
 	private String apellido;
+	@NotNull
 	private Long dni;
+	@NotBlank
 	private String cuit;
-	private Integer nroMatricula;
+	@NotBlank
 	private String foto;
-	@JsonFormat(pattern = "yyyy-MM-dd", timezone = "America/Argentina/Buenos_Aires")
-	private LocalDate fechaAlta;	
+	@NotNull
+	private Long titulo;
+//Contacto
+	@NotBlank
+	private String direccion;
+	@NotBlank
+	private String telefono;
+	private String telefonoAlternativo;
+	@NotBlank
+	private String email;
+//Municipio
+	private Long municipio;
+	
+	
+//	private Integer nroMatricula;
+//	@JsonFormat(pattern = "yyyy-MM-dd", timezone = "America/Argentina/Buenos_Aires")
+//	private LocalDate fechaAlta;		
 }

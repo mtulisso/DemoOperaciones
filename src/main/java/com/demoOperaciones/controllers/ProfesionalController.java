@@ -25,10 +25,16 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 @Tag(name= "Profesional", description="Gestión de profesionales")
 public interface ProfesionalController {
 
+	@Operation(summary = "obtenerUno")
 	public ResponseEntity<Profesional> find(@PathVariable Long Id) throws Exception;
-	
+		
+	@Operation(summary = "obtenerTodos")	
 	public List<Profesional> findAll();
 	
-	@Operation(summary = "Alta de un profesional")
-	public ResponseEntity<ProfesionalResponseDTO> generate(@Valid @RequestBody ProfesionalRequestDTO entity);
+	@Operation(summary = "nuevoProfesional")
+	public ResponseEntity<ProfesionalResponseDTO> generate(@Valid @RequestBody ProfesionalRequestDTO entity) throws Exception;
+	
+//	@Operation(summary = "editarProfesional")
+//	@Operation(summary = "borrarProfesional")
+	
 }

@@ -27,6 +27,7 @@ public interface TituloController {
 	
 	public ResponseEntity<Titulo> find(@PathVariable Long Id) throws Exception;
 	
+	@Operation(summary = "obtenerTodos")
 	public List<Titulo> findAll();
 	
 	@Operation(summary = "Alta de un título")

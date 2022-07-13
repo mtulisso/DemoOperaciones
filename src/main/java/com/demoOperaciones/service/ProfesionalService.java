@@ -14,11 +14,12 @@ import com.demoOperaciones.response.ProfesionalResponseDTO;
  *
  */
 public interface ProfesionalService {
-	public Profesional findById(Long id) throws Exception;
 	
+	public Profesional findById(Long id) throws Exception;
+
 	public void delete(Long id);
 	
 	public List<Profesional> findAll();
 	
-	ProfesionalResponseDTO generate(ProfesionalRequestDTO entity);
+	ProfesionalResponseDTO generate(ProfesionalRequestDTO entity) throws Exception;
 }
