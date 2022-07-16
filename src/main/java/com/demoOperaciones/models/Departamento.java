@@ -25,6 +25,7 @@ import lombok.NoArgsConstructor;
 public class Departamento implements Serializable {
 	@Id
 	@GeneratedValue (strategy = GenerationType.IDENTITY)
+//	@Column(name="id_departamento")
 	private Long id;
 	private String nombre;	
 	

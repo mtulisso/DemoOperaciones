@@ -24,11 +24,13 @@ import io.swagger.v3.oas.annotations.tags.Tag;
  */
 @Tag(name= "Título", description="Gestión de títulos")
 public interface TituloController {
-	
+	@Operation(summary = "obtenerUno")
 	public ResponseEntity<Titulo> find(@PathVariable Long Id) throws Exception;
 	
 	@Operation(summary = "obtenerTodos")
 	public List<Titulo> findAll();
+	
+	public void delete(Long Id);
 	
 	@Operation(summary = "Alta de un título")
 	public ResponseEntity<TituloResponseDTO> generate(@Valid @RequestBody TituloRequestDTO entity);

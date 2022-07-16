@@ -27,6 +27,7 @@ public class HistoricoControllerImpl implements HistoricoController {
 	private HistoricoService historicoService;
 	
 	@Override
+	@GetMapping("{Id}")
 	public ResponseEntity<Historico> find(Long Id) throws Exception{
 		return new ResponseEntity<Historico>(this.historicoService.findById(Id), HttpStatus.OK);
 	}

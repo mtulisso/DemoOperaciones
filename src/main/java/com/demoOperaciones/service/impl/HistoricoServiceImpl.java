@@ -23,8 +23,7 @@ public class HistoricoServiceImpl implements HistoricoService {
 	
 	@Override
 	public Historico findById(Long id) throws Exception {
-		return this.historicoRepository.findById(id).orElseThrow(() -> new Exception("No se encontró el ID = "+ id +"."));
-//		return this.historicoRepository.findById(id).get();
+		return this.historicoRepository.findById(id).get();
 	}
 
 	@Override

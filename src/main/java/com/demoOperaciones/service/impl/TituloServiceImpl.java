@@ -28,16 +28,16 @@ public class TituloServiceImpl implements TituloService {
 	
 	@Override
 	public Titulo findById(Long id) throws Exception {
-		return this.tituloRepository.findById(id).orElseThrow(() -> new Exception("No se encontró el ID = "+ id +"."));
-	}
-
-	@Override
-	public void delete(Long id) {
+		return this.tituloRepository.findById(id).get();
 	}
 
 	@Override
 	public List<Titulo> findAll() {
 		return tituloRepository.findAll();
+	}
+	
+	@Override
+	public void delete(Long id) {
 	}
 
 	@Override

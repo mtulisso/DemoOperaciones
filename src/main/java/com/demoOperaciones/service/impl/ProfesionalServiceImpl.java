@@ -39,8 +39,6 @@ public class ProfesionalServiceImpl implements ProfesionalService {
 		return this.profesionalRepository.findById(id).get();
 	}
 	
-//	.orElseThrow(() -> new Exception("No se encontró el ID = "+ id +" que entró como parámetro."))
-
 	public List<Profesional> findAll(){
 		return profesionalRepository.findAll();
 	}

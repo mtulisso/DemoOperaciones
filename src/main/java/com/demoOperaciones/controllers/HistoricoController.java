@@ -19,6 +19,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
  */
 @Tag(name= "Histórico", description="Gestión de históricos")
 public interface HistoricoController {
+	@Operation(summary = "obtenerUno")
 	public ResponseEntity<Historico> find(@PathVariable Long Id) throws Exception;
 	
 	@Operation(summary = "obtenerTodos")

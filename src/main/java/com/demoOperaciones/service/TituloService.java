@@ -16,9 +16,9 @@ import com.demoOperaciones.response.TituloResponseDTO;
 public interface TituloService {
 	public Titulo findById(Long id) throws Exception;
 	
-	public void delete(Long id);
-	
 	public List<Titulo> findAll();
+	
+	public void delete(Long id);
 	
 	TituloResponseDTO generate(TituloRequestDTO entity);
 }
