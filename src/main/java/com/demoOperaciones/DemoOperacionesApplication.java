@@ -24,8 +24,8 @@ public class DemoOperacionesApplication {
 	
 	@Bean
 	public OpenAPI customOpenAPI() {
-		return new OpenAPI().info(new Info().title("Resolución API").version("v1.0.0")
-				.description("Proyecto ResolucionApi - Marcos Tulisso")
+		return new OpenAPI().info(new Info().title("LiquiAPI").version("v1.0.0")
+				.description("Proyecto Demo Operaciones - Marcos Tulisso")
 				.contact(new Contact().name("Marcos Tulisso").email("tulisso@email.com.ar")));
 				//.license(new License().name("Apache 2.0").url("http://springdoc.org")));
 	}
