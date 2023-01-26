@@ -4,23 +4,23 @@ Ejemplo servicios para Resolución SSS
 DemoOperaciones
 Instalaciones
 
-Java
+#Java
 [https://www.java.com/es/download/](https://www.java.com/es/download/)
 
-JDK 15.2
+#JDK 15.2
 [https://jdk.java.net/archive/](https://jdk.java.net/archive/)
 
-PostgreSQL
+#PostgreSQL
 [https://www.postgresql.org/](https://www.postgresql.org/)
 
-Spring Tools 4
+#Spring Tools 4
 [https://spring.io/tools](https://spring.io/tools)
 
-Lombok
+#Lombok
 [https://projectlombok.org/download](https://projectlombok.org/download)
 
-TortoiseGit
+#TortoiseGit
 [https://tortoisegit.org/download/](https://tortoisegit.org/download/)
 
-Crear Base de Datos
-Operaciones
+#Crear Base de Datos
+..Operaciones
