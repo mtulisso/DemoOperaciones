@@ -1,9 +1,6 @@
 # DemoOperaciones
 Ejemplo servicios para Resolución SSS
 
-DemoOperaciones
-Instalaciones
-
 Java
 > [https://www.java.com/es/download/](https://www.java.com/es/download/)
 
