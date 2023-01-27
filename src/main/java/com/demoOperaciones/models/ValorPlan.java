@@ -43,8 +43,6 @@ public class ValorPlan implements Serializable{
 	@Column (name="CUENTA_ID")
 	private Integer cuenta;
 	
-	
-	
 	/**
 	 * 
 	 */
