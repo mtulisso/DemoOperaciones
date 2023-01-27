@@ -25,7 +25,7 @@ import com.demoOperaciones.service.PersonaBonificadaService;
  *
  */
 @RestController
-@RequestMapping("/personasBonificadas")
+@RequestMapping("/api/personasBonificadas")
 public class PersonaBonificadaControllerImpl implements PersonaBonificadaController {
 	@Autowired 
 	private PersonaBonificadaService personaBonificadaService;

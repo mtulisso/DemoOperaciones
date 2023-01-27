@@ -15,5 +15,5 @@ public class PersonaBonificadaResponseDTO {
 	private Integer periodo;
 	private String cuenta;
 	private String persona;
-	private Long cuit;
+	private Long cuil;
 }

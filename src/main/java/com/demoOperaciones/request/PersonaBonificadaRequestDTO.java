@@ -20,5 +20,5 @@ public class PersonaBonificadaRequestDTO {
 	@NotNull
 	private Integer persona;
 	@NotNull
-	private Long cuit;
+	private Long cuil;
 }

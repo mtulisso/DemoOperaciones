@@ -25,7 +25,7 @@ import com.demoOperaciones.service.AumentoPeriodoService;
  *
  */
 @RestController
-@RequestMapping("/aumentosPeriodos")
+@RequestMapping("/api/aumentosPeriodos")
 public class AumentoPeriodoControllerImpl implements AumentoPeriodoController {
 	@Autowired
 	private AumentoPeriodoService aumentoPeriodoService;

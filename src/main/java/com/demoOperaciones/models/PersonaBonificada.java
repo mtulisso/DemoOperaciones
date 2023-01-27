@@ -42,9 +42,9 @@ public class PersonaBonificada implements Serializable{
 	@Column (name="PERSONA_NUMERO")
 	private Integer persona;
 	
-	@Column (name="CUIT")
-	private Long cuit;
-	
+	@Column (name="CUIL")
+	private Long cuil;
+			
 	/**
 	 * 
 	 */

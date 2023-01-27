@@ -40,7 +40,7 @@ public class PersonaBonificadaServiceImpl implements PersonaBonificadaService {
 		personaBonificada.setPeriodo(entity.getPeriodo());
 		personaBonificada.setCuenta(entity.getCuenta());
 		personaBonificada.setPersona(entity.getPersona());
-		personaBonificada.setCuit(entity.getCuit());
+		personaBonificada.setCuil(entity.getCuil());
 		return this.modelMapper.map(this.personaBonificadaRepository.save(personaBonificada), PersonaBonificadaResponseDTO.class);
 	}
 	
