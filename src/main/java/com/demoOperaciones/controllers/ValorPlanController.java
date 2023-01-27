@@ -5,9 +5,9 @@ package com.demoOperaciones.controllers;
 
 import java.util.List;
 
+import com.demoOperaciones.exception.ErrorDetails;
 import com.demoOperaciones.response.ValorPlanResponseDTO;
 
-import exception.ErrorDetails;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;

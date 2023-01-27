@@ -1,7 +1,7 @@
 /**
  * 
  */
-package exception;
+package com.demoOperaciones.exception;
 
 import java.util.Date;
 
