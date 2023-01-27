@@ -28,8 +28,8 @@ public interface ValorPlanController {
 	@Parameters({
 		@Parameter(name = "periodo", description = "Buscar por período", in = ParameterIn.QUERY, schema = @Schema(type = "integer")),
 		@Parameter(name = "cuenta", description = "Buscar por cuenta", in = ParameterIn.QUERY, schema = @Schema(type = "integer")),
-		@Parameter(name = "liquidacionProvisoriaId", description = "Buscar por Id de liquidación provisoria", in = ParameterIn.QUERY, schema = @Schema(type = "integer")),
-		@Parameter(name = "liquidacionDefinitivaId", description = "Buscar por Id de liquidación definitiva", in = ParameterIn.QUERY, schema = @Schema(type = "integer"))
+		@Parameter(name = "ProvisoriaId", description = "Buscar por Id de liquidación provisoria", in = ParameterIn.QUERY, schema = @Schema(type = "integer")),
+		@Parameter(name = "DefinitivaId", description = "Buscar por Id de liquidación definitiva", in = ParameterIn.QUERY, schema = @Schema(type = "integer"))
 	})
 	@Operation(summary = "Obtener todos los nose")
 	@ApiResponses(value = {

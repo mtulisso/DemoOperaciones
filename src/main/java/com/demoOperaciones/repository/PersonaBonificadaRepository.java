@@ -12,5 +12,5 @@ import com.demoOperaciones.models.PersonaBonificada;
  *
  */
 public interface PersonaBonificadaRepository extends JpaRepository<PersonaBonificada, Integer> {
-
+		
 }
